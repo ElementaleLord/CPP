@@ -1,0 +1,76 @@
+1. install the better comments extension on vscode
+
+2. after completing the download click on the gear icon in the bottom left
+
+3. click on the settings button then switch to the workshop and search 'better comments'
+
+4. click on the edit settings.json button under 'better comments: tags'
+
+5. paste the following code in-place of the "better-comments-tags": ['code goes here people']
+        MAKE SURE TO KEEP THE LINE MENTIONED ABOVE ONLY MODIFY WHAT'S INSIDE THE [] SQUARE BRACKETS
+
+code:(copy and paste everything form line 14 to 76).
+
+		{
+			"tag": "!",
+			"color": "#FF0000",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#00CCFF",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "$",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#00FF00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "^",
+			"color": "#FF00FF",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "~",
+			"color": "#F7FF00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
