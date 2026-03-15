@@ -8,6 +8,19 @@
 void framebuffer_size_callback(GLFWwindow*, int, int);
 void processInput(GLFWwindow*);
 
+void framebuffer_size_callback(GLFWwindow* window, int width, int height){
+    glViewport(0, 0, width, height);
+};
+void processInput(GLFWwindow* window){
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
+        glfwSetWindowShouldClose(window, true);
+    };
+
+    // if (glfwGetKey(window, GLFW_KEY_H) == GLFW_PRESS){
+    //     std::cout << "Hi" << std::endl;
+    // };
+}
+
 int main(){
     if (!glfwInit()){
     //^ Init For glfw
@@ -61,16 +74,4 @@ int main(){
 
     glfwTerminate();
     return 0;
-}
-void framebuffer_size_callback(GLFWwindow* window, int width, int height){
-    glViewport(0, 0, width, height);
-};
-void processInput(GLFWwindow* window){
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS){
-        glfwSetWindowShouldClose(window, true);
-    };
-
-    // if (glfwGetKey(window, GLFW_KEY_H) == GLFW_PRESS){
-    //     std::cout << "Hi" << std::endl;
-    // };
 }
